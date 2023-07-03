@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Home from './js/components/Home';
 /*
  * Welcome to your app's main JavaScript file!
  *
@@ -12,3 +15,4 @@ import './styles/app.css';
 import './bootstrap';
 
 console.log("Hola mundo");
+ReactDOM.render(<Home />, document.getElementById('root'));
