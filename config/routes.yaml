@@ -1,3 +1,15 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+home:
+    path: /
+    controller: App\Controller\DefaultController::index
+
+agentes:
+    path: /agentes
+    controller: App\Controller\DefaultController::agentes
+
+operativos:
+    path: /operativos
+    controller: App\Controller\DefaultController::operativos
+
+honorarios:
+    path: /honorarios
+    controller: App\Controller\DefaultController::honorarios

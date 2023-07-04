@@ -1,5 +1,6 @@
 const Encore = require('@symfony/webpack-encore');
 const dotenv = require("dotenv");
+const webpack = require("webpack");
 
 // Manually configure the runtime environment if not already configured yet by the "encore" command.
 // It's useful when you use tools that rely on webpack.config.js file.
@@ -13,6 +14,7 @@ Encore
     // public path used by the web server to access the output path
     .setPublicPath('/symfony-react-wp/public/build')
     .enableReactPreset()
+
     // only needed for CDN's or sub-directory deploy
     //.setManifestKeyPrefix('build/')
 
@@ -22,7 +24,7 @@ Encore
      * Each entry will result in one JavaScript file (e.g. app.js)
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
-    .addEntry('app', './assets/app.js')
+    .addEntry('app', './frontend/src/main.jsx')
     .enableStimulusBridge('./assets/controllers.json')
 
     // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)
@@ -61,7 +63,10 @@ Encore
         }
 
         options['process.env'].SECRET = JSON.stringify(env.parsed.APP_SECRET);
+        options['process.env'].API_URL = JSON.stringify(env.parsed.API_URL);
     })
+
+    .addPlugin(new webpack.ProvidePlugin({"React": "react"}))
 
     // enables Sass/SCSS support
     //.enableSassLoader()
