@@ -14,5 +14,6 @@ import './styles/app.css';
 // start the Stimulus application
 import './bootstrap';
 
-console.log("Hola mundo");
+console.log("Hola munda");
+console.log(process.env);
 ReactDOM.render(<Home />, document.getElementById('root'));
