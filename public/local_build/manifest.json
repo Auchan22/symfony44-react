@@ -1,0 +1,8 @@
+{
+  "symfony-react-wp/public/local_build/app-local.css": "/symfony-react-wp/public/local_build/app-local.css",
+  "symfony-react-wp/public/local_build/app-local.js": "/symfony-react-wp/public/local_build/app-local.js",
+  "symfony-react-wp/public/local_build/runtime.js": "/symfony-react-wp/public/local_build/runtime.js",
+  "symfony-react-wp/public/local_build/vendors-node_modules_core-js_modules_es_array_concat_js-node_modules_core-js_modules_es_array-e57666.css": "/symfony-react-wp/public/local_build/vendors-node_modules_core-js_modules_es_array_concat_js-node_modules_core-js_modules_es_array-e57666.css",
+  "symfony-react-wp/public/local_build/vendors-node_modules_core-js_modules_es_array_concat_js-node_modules_core-js_modules_es_array-e57666.js": "/symfony-react-wp/public/local_build/vendors-node_modules_core-js_modules_es_array_concat_js-node_modules_core-js_modules_es_array-e57666.js",
+  "symfony-react-wp/public/local_build/images/dark-mosaic.png": "/symfony-react-wp/public/local_build/images/dark-mosaic.4ec72006.png"
+}

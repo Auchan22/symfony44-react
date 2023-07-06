@@ -13,6 +13,8 @@ import router from "./utils/routes";
 
 const queryClient = new QueryClient();
 
+console.log(process.env);
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}>

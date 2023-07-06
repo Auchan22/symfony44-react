@@ -1,8 +1,8 @@
 webpack_encore:
-    # The path where Encore is building the assets - i.e. Encore.setOutputPath()
     output_path: '%kernel.project_dir%/public/build'
-    # If multiple builds are defined (as shown below), you can disable the default build:
-    # output_path: false
+    builds:
+        prodConfig: '%kernel.project_dir%/public/build'
+        localConfig: '%kernel.project_dir%/public/local_build'
 
     # Set attributes that will be rendered on all script and link tags
     script_attributes:
